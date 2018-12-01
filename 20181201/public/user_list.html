@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+
+	</head>
+	<body>
+		<!--错误总结
+			1、common.js中，id是参数不能加引号，不然不报错但是监听等不起作用
+			2、xhr.readyState S大写 xhr.不能少
+			3、路径 / 不能少
+			4、$().value .value不能少
+			5、引入中间件body-parser 要在服务器那使用，server.use(bodyParser.urlencoded({extended:false}));
+			6、post 方法中。xhr.setRequestHeader("Content-Type","applicton/x-www-form-urlencoded");
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+			7.xhr中注意window和"Microsoft.XMLHttp
+		-->
+		<script src="./common.js"></script>
+		<input type="text" name="start" id="start">
+		<input type="text" name="count" id="count">
+		<input type="submit" value="获取用户表" onclick="getList()">
+		<div id="str">qqqqq</div>
+		<table border="1px">
+			<thead>
+				<tr>
+				<td>uid</td>
+				<td>uname</td>
+				<td>upwd</td>
+				<td>email</td>
+				<td>phone</td>
+				<td>avatar</td>
+				<td>user_name</td>
+				<td>gender</td>
+			</tr>
+			</thead>
+			<tbody id="showBody">
+			</tbody>
+			
+		</table>
+
+		<script>
+			function getList(){
+				var xhr = createXhr();
+				
+				xhr.onreadystatechange=function(){
+					
+					if(xhr.readyState==4&&xhr.status==200){
+						
+						var result=xhr.responseText;
+						//alert(result);
+						//在浏览器的控制台打印
+						console.log(result);
+						console.log(typeof result);//string类型 =>json格式
+						//服务器向浏览器响应的数据是JSON格式的
+						var res = JSON.parse(result);
+						//console.log(typeof res);
+						//console.log(res);
+						
+						for(var str='',i=0;i<res.length;i++){
+							str+="<tr>";
+								for(var proName in res[i]){
+								str+="<td>"+res[i][proName]+"</td>";
+								}
+							str+="</tr>";
+						}
+						$("showBody").innerHTML=str;
+					}
+				}
+				
+				var start=$("start").value;
+				var count=$("count").value;
+				xhr.open("get","/user/list?start="+start+"&count="+count,true);
+				xhr.send(null);
+
+			}
+
+
+		</script>
+	</body>
+</html>
