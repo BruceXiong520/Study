@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+	</head>
+	<body>
+		<div>用户名称<input type="text" id="uname" onblur="txt_blur()" onfocus="txt_focus()"><span id="msg"></span></div>
+		<div>用户密码<input type="password" id="upwd" onfocus="txt_focus()" onblur="txt_blur()"><span id="msg1"></span></div>
+		<script>
+			function  txt_blur(){
+				if(!uname.value){
+					msg.innerHTML="用户名不能为空！";
+				}else{
+					msg.innerHTML="用户名通过！";
+				}
+				if(!upwd.value){
+					msg1.innerHTML="密码不能为空！"
+				}else{msg1.innerHTML="密码通过"}
+			}
+			function txt_focus(){
+				msg1.innerHTML="用户密码为6-12位！"
+				msg.innerHTML="用户名6-12位！"
+			}
+		</script>
+	</body>
+</html>

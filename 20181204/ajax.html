@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+	</head>
+	<body>
+		<script>
+			
+				var xhr=(function(){
+					if(window.XMLHttpRequest){
+						xhr=new XMLHttpRequest();
+					}else{
+						xhr=new ActiveXObject("Microsoft.XMLhttp");
+					}
+					return xhr;
+				})();
+
+				console.log(xhr);
+				xhr=new XMLHttpRequest();
+				console.log(xhr);
+				console.log(window.XMLHttpRequest);
+
+				xhr.onreadystatechange=function(){
+					if(readyState==4&&status==200){
+						var result=xhr.responseText;
+						console.log(resule);
+					}
+				}
+				xhr.open('post','url',true);
+				xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+				
+				xhr.send(msg)
+			
+			
+		</script>
+	</body>
+</html>

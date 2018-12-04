@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset = "utf-8">
+	</head>
+	<body align="center">
+	<h1>
+		<div id="d1">我是大帅哥！</div>
+		<div id="d2">这里要变成表格</div>
+
+		<input type="button" value="打印div" onclick="getDiv()">
+		<input type="button" value="修改div" onclick="updateDiv()">
+		<input type="button" value="添加表格" onclick="addTable()">
+		</h1>
+		<script>
+			function getDiv(){
+				console.log(d1.innerHTML);
+			}
+			function updateDiv(){
+				d1.innerHTML+="你是丑鬼";
+			}
+
+			function addTable(){
+				var str='';
+				str+="<table align='center' border='center'>"
+					for(var i=0;i<=2;i++){
+						str+="<tr>";
+						for(var j=0;j<=2;j++){
+							str+="<td>"+i*j+"</td>"
+							}
+						str+="</tr>"
+					}
+				str+="</table>";
+				d2.innerHTML=str;
+			}
+
+
+		</script>
+
+	<!--
+		<div id="d1">我是一个div</div>
+		<input type="button" value="你不是正经的div" onclick="show()">
+		<script>
+			var num=0;
+			function show(){
+				num++;
+				d1.innerHTML="<h1>"+num+"</h1>";
+			}
+		</script>
+	-->
+		<!--
+		<div id="d1"><span>这是测试文本</span></div>
+		<script>
+			//var ele=document.getElementById("d1");
+			var ele=d1;
+			//console.log(ele.innerHTML);
+			//console.log(ele);
+			
+			//ele.innerHTML="我是通过dom操作添加的值";
+			console.log(d1.innerHTML);
+			d1.innerHTML+="<h2>"+"HTML5支持 id就是对象"+"</h2>";
+		</script>
+		-->
+	</body>
+</html>
