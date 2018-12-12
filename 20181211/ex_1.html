@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+				box-sizing:border-box;
+			}
+			#container{
+				width:1000px;
+				height:560px;
+				margin:0 auto;
+				background-image:url(bg.png);
+				position:relative;
+
+			}
+			div.login{
+				width:280px;
+				height:296px;
+				background-color:rgba(0,0,0,0.1);
+				position:absolute;
+				right:100px;
+				bottom:100px;
+			}
+			table{
+				width:100%;
+			}
+			h4,a,#id,label{
+				color:#fff;
+				text-decoration:none;
+			}
+			h4{
+				padding:10px;
+			}
+			a,label{
+				font-size:12px;
+
+			}
+			#uname{
+				height:37px;
+				width:100%;
+				background:#fff url(yhm.png) no-repeat 97% center;
+				margin-bottom:30px;
+				margin-top:15px;
+				border:0;
+			}
+			#upwd{
+				height:37px;
+				width:100%;
+				background:#fff url(mm.png) no-repeat 97% center;
+				margin-bottom:30px;
+				margin-top:10px;
+				border:0;
+			}
+			#btn{
+				height:35px;
+				width:100%;
+				background:#0aa1ed;
+				border:0;
+				outline:0;
+				margin-top:10px;
+				color:#fff;
+			}
+			a{
+				margin-right:0px;
+			}
+			#auto{
+				vertical-align:bottom;
+			}
+			input{
+				padding-left:15px;
+			}
+			label{
+				margin-left:10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="container">
+			<div class="login">
+			<table>
+				<tr>
+					<td  align="left"><h4>登陆学子商城</h4></td>
+					<td align="right"><a href="">新用户注册</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><hr></td>
+				
+				</tr>
+				<tr>
+					<td colspan="2"><input type="text" placeholder="请输入您的用户名" id="uname"></td>
+				
+				</tr>
+				<tr>
+					<td colspan="2"><input type="text" placeholder="请输入您的密码" id="upwd"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="auto"><label>自动登陆</label></td>
+					<td align="right"><a href="#"><a href="">忘记密码</a></a></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" value="登陆" id="btn"></td>
+					
+				</tr>
+			</table>
+			</div>
+		</div>
+		
+	</body>
+</html>

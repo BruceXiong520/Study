@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			div{
+				
+				width:200px;
+				height:200px;
+				position:absolute;
+				left:0;
+				top:0px;
+			}
+			#d1{
+				background:red;
+				transform:skew(30deg,40deg)
+			}
+			#d2{
+				background:blue;
+				transform:skewY(30deg)
+			
+			}
+			#d3{
+				background:yellow;
+			}
+			#d3:hover{
+				transform:translate(200px,200px) rotate(135deg) 
+				skewX(45deg) scale(1.5);
+			}
+	
+		</style>
+	</head>
+	
+	<body>
+		<div id="d1"></div>
+		<div id="d2"></div>
+		<div id="d3"></div>
+	</body>
+</html>

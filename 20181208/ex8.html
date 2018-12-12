@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			#d1{
+				width:200px;
+				height:200px;
+				border:6px solid #000;
+				border-radius:50%;
+				position:relative;
+			}
+			#d2{
+				width:7px;
+				height:50px;
+				background:#000;
+				position:absolute;
+				left:97px;
+				top:50px;
+				transform-origin:center bottom;
+				animation:change 3600s linear infinite;
+			}
+			#d3{
+				width:5px;
+				height:70px;
+				background:red;
+				position:absolute;
+				left:98px;
+				top:30px;
+				transform-origin:center bottom;
+				animation:change 60s linear infinite;
+				
+			}
+
+			@keyframes change{
+				0%{
+					transform:rotate(0deg);
+				}
+				100%{
+					transform:rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+				<div id="d2"></div>
+				<div id="d3"></div>
+				<div id="d4"></div>
+		</div>
+	
+	</body>
+</html>

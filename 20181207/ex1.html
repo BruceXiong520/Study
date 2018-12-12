@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+		
+			*{
+				margin:0;
+				padding:0;
+			}
+			div.main{
+				margin:0 auto;
+				width:1000px;
+				height:400px;
+				position:relative;
+			}
+			div.main div a{
+				float:left;
+			}
+			.img{
+				display:none;
+			}
+
+			.img:target{
+				display:block;
+			}
+			#d1{
+				width:30px;
+				height:50px;
+				background:#c4ccd4;
+				position:absolute;
+				left:10px;
+				top:150px;
+			}
+			#img1{
+				position:absolute;
+				left:8px;
+				top:18px
+				
+				
+			}
+			#d2{
+				width:30px;
+				height:50px;
+				background:#c4ccd4;
+				position:absolute;
+				right:10px;
+				top:150px;
+
+			}
+			#img2{
+				position:absolute;
+				right:8px;
+				top:18px;
+				
+			}
+			ul{
+				list-style:circle;
+			}
+			ul li{
+				float:left;
+			}
+			/*
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			div{
+				border:1px solid #000;
+				width:180px;
+				height:180px;
+				padding:10px;
+				
+			}
+			div img{
+				display:none;
+			}
+			img:target{
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<div class="main">
+			<img src="banner1.png" id="no1">
+			<img src="index/banner2.png" id="no2" class="img">
+							<img src="index/banner2.png" id="no3" class="img">
+							<img src="index/banner3.png" id="no4" class="img">
+			<div>
+				<a href= "#no1">1</a>
+				<a href= "#no2">2</a>
+				<a href= "#no3">3</a>
+				<a href= "#no4">4</a>
+			</div>
+			
+			<div> 
+				<div id="d1"><a href=""><img src="arrow-left.png" alt="" id="img1"></a></div>
+				<div id="d2"><a href=""><img src="arrow-right.png" alt="" id="img2"></a></div>
+			</div>
+
+		</div>
+		<p style="color:red" >asd</p>
+		<!--
+		<a href="#NO1">图片1</a>
+		<a href="#NO2">图片2</a>
+		<a href="#NO3">图片3</a>
+		<div>
+			<img src="index/index_hot_food_img1.png" id="NO1" >
+			<img src="index/index_hot_food_img2.png" id="NO2" >
+			<img src="index/index_hot_food_img3.png" id="NO3" >
+		</div>
+		-->
+	</body>
+</html>

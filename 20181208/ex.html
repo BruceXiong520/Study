@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+	</head>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			
+		}
+		#main{
+			margin:10px auto 0;
+			width:1000px;
+		}
+		a{
+			text-decoration:none;
+			font-size:14px;
+			color:#ddd;
+		}
+		ul{
+			list-style:none;
+		}
+		/*此处logo也要浮动，不然，header左浮动后还是在第二行*/
+		#logo,#header_middle{
+			float:left;
+		}
+		#header_middle{
+			width:410px;
+			height:34px;
+			border:1px solid #1aa1ed;
+			margin-left:50px;
+		}
+		#header_input input{
+			border:0;
+			outline:none;
+			width:280px;
+			height:34px;
+			margin-left:5px;
+			box-sizing:border-box;
+		}
+		#search_normal,#search_img,#search_txt{
+			float:right;
+		}
+		#search_normal{
+			margin:0 5px;
+		}
+		#search_normal,#search_txt{
+			margin-top:5px;
+		}
+		#list li{
+			float:right;
+		}
+		#list li span{
+			margin:0 10px;
+		}
+		#list li a{
+			color:#000;
+			font-size:12px;
+			
+		}
+		#main nav li{
+			margin-top:50px;
+			float:left;
+			margin-right:40px;
+		}
+		#main nav li a{
+			font-weight:bold;
+			font-size:16px;
+		}
+		section #banner{
+			margin-top:30px;
+			width:1000px;
+			height:400px;
+			overflow:hidden;
+			position:relative;
+			margin-bottom:50px;
+		}
+		#banner-img li{
+			float:left;
+		}
+		#banner a.click-side{
+			width:35px;
+			height:70px;
+			position:absolute;
+			top:165px;
+		}
+		#banner a.click-left{
+			background:#ddd url(index/arrow-left.png) no-repeat center center;
+			left:5px
+		}
+		#banner a.click-right{
+			background:#ddd url(index/arrow-right.png) no-repeat center center;
+			right:5px
+		}
+		#banner ul.indc{
+			position:absolute;
+			left:480px;
+			bottom:30px;
+		}
+		#banner ul.indc li{
+			float:left;
+			width:10px;
+			height:10px;
+			border-radius:50%;
+			background:#fff;
+			margin-right:8px;
+		}
+	
+		#banner ul.indc li.active{
+			background:#0aa1ed;
+		}
+		/*
+		#f1{
+			width:1000px;
+			height:632px;
+			position:relative;
+		}
+		#first{
+			width:610px;
+			height:370px;
+			background:#ddd;
+			position:relative;
+			float:left;
+		}
+		#first img{
+			position:absolute;
+			right:20px;
+			bottom:20px;
+			margin-top:20px;
+		}
+		#first input{
+			background:#0aa1ed;
+			width:130px;
+			height:40px;
+			position:absolute;
+			left:75px;
+			bottom:100px;
+			color:#fff;
+			font-size:15px;
+		}
+		#second{
+			width:381px;
+			height:377px;
+			background:#ddd;
+			float:left;
+		}
+	*/	#container{
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+		}
+		#container>div{
+			background:#afafaf;
+		}
+		#container>div:nth-child(1){
+			width:609px;
+			height:377px;
+			margin-bottom:10px;
+			position:relative;
+
+		}
+		#container>div:nth-child(2){
+			width:381px;
+			height:377px;
+			margin-bottom:10px;
+			position:relative;
+		}
+		#container>div:nth-child(3){
+			width:377px;
+			height:233px;
+			margin-bottom:10px;
+			position:relative;
+		}
+		#container>div.product{
+			width:198px;
+			height:233px;
+			margin-bottom:10px;
+			position:relative;
+		}
+		#container>div:nth-child(1) img,#container>div:nth-child(2) img{
+			position:absolute;
+			right:20px;
+			bottom:20px;
+		}
+		#container>div:nth-child(3) img{
+			position:absolute;
+			right:15px;
+			top:40px;
+		}
+		#container>div.product img{
+			position:absolute;
+			left:3px;
+			top:10px;
+		}
+	</style>
+	<body>
+		<!--整体布局main 居中，宽1000pxheader+nav-->
+		<div id="main">
+			<!--头部分为左logo 中间输入框和搜索字和图片，右5个图标 都是链接-->
+			<header>
+				<!--logo图标-->
+				<a href="#" id="logo"><img src="img/logo.png"></a>
+				<!--中间部分-->
+				<div id="header_middle">
+					<!--看成是由input和其他三个小部分组成需要在中间部分中间右浮动-->
+					<a href="#" id="header_input"><input type="text" placeholder="请输入您要搜索的信息"></a>
+					<a href="#" id="search_img"><img src="img/search.png" alt=""></a>
+					<a href="#" id="search_normal"><img src="img/header_normal.png" alt=""></a>
+					<a href="#" id="search_txt">分类搜索</a>
+				</div>
+				<!-- 看成是一个列表，5个图标需要右浮动-->
+				<div>
+					<ul id="list">
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a><span>|</span></li>
+						<li><a href="#"><img src="img/shop_car.png" alt=""></a><span>|</span></li>
+						<li><a href="#"><img src="img/order.png" alt=""></a><span>|</span></li>
+						<li><a href="#"><img src="img/care.png" alt=""></a><span>|</span></li>
+					</ul>	
+				</div>
+			</header>
+			<p style="clear:both"></p>
+			<nav>
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">学习用品</a></li>
+					<li><a href="#">私人订制</a></li>
+				</ul>
+			</nav>
+			<p style="clear:both"></p>
+			<section>
+				<div id="banner">
+					<ul id="banner-img">
+						<li><a href="#"><img src="index/banner1.png" alt=""></a></li>
+						<li><a href="#"><img src="index/banner2.png" alt=""></a></li>
+						<li><a href="#"><img src="index/banner3.png" alt=""></a></li>
+						<li><a href="#"><img src="index/banner4.png" alt=""></a></li>
+					</ul>
+					<a href="#" class="click-left click-side"></a>
+					<a href="#" class="click-right click-side"></a>
+					<ul class="indc">
+						<li class="active"><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>	
+				</div>
+				<h1>首页推荐 /1F</h1>
+				<hr><br>
+				<div id="container">
+					<div><img src="index/study_computer_img1.png" alt=""></div>
+					<div><img src="index/study_computer_img2.png" alt=""></div>
+					<div><img src="index/study_computer_img3.png" alt=""></div>
+					<div class="product"><img src="index/study_computer_img4.png" alt=""></div>
+					<div class="product"><img src="index/study_computer_img5.png" alt=""></div>
+					<div class="product"><img src="index/study_computer_img3.png" alt=""></div>
+				</div>
+	<!--
+				<div id=="f1">
+
+					<div id="first">
+						<div>
+						
+<pre>
+	<h2>
+	Apple MacBook 
+	Air系列</h2><h6>
+	     酷睿双核i5处理器|256GB SSD|8GB内存|英特
+	     尔HD显卡620含共享显卡内存</h6><h1>
+	￥6988.00</h1></pre>
+<input type="button" value="查看详情">
+						</div>
+						<img src="index/study_computer_img1.png" alt="">
+					</div>
+					<div id="second">
+						<div></div>
+						<img src="index/study_computer_img2.png" alt="">
+					</div>
+				</div>
+				-->
+			</section>
+		</div>
+	
+	</body>
+</html>

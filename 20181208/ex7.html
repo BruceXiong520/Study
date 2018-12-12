@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			@keyframes change{
+				0%{
+					background:blue;
+				}
+				25%{
+					background:yellow;
+					border-radius:50%
+				}
+				50%{
+					background:red;
+					border-radius:0%;
+				
+				}
+				75%{
+					background:pink;
+					border-radius:50%;
+				}
+				100%{
+					background:purple;
+					border-radius:0%;
+				}
+			}
+			div{
+				width:200px;
+				height:200px;
+				border:1px solid #000;
+				
+			}
+			div:hover{
+				animation-name:change;
+				animation-duration:4s;
+				animation-timing-function:linear;
+				animation-delay:1s;
+				animation-iteration-count:infinite;
+				animation-direction:reverse;
+				animation-direction:alternate;
+				animation-fill-mode:both;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

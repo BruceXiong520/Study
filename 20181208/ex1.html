@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+		ul{
+			margin:0;
+			padding:0;
+			list-style:none;
+			
+		}
+		ul li{
+			text-decoration:none;
+			
+		}
+		#banner{
+			margin:0 auto;
+			width:1000px;
+			height:400px;
+			overflow:hidden;
+			position:relative;
+		}
+		#banner ul.banner-img li{
+			float:left;
+		}
+		#banner a.click-side{
+			width:35px;
+			height:70px;
+			position:absolute;
+			top:165px;
+		}
+		#banner a.click-left{
+			background:#ddd url(index/arrow-left.png) no-repeat center center;
+			left:5px;
+		}
+		#banner a.click-right{
+			background:#ddd url(index/arrow-right.png) no-repeat center center;
+			right:5px
+		}
+		</style>
+	</head>
+	<body>
+		<div id="banner">
+			<ul class="banner-img">
+				<li><a href="#"><img src="index/banner1.png" alt=""></a></li>
+				<li><a href="#"><img src="index/banner2.png" alt=""></a></li>
+				<li><a href="#"><img src="index/banner3.png" alt=""></a></li>
+				<li><a href="#"><img src="index/banner4.png" alt=""></a></li>
+			</ul>
+			<a href="#" class="click-left click-side"></a>
+			<a href="#" class="click-right click-side"></a>
+			<ul id="inds">
+				<li><a href="" id="active"></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>	
+		</div>
+	</body>
+</html>
