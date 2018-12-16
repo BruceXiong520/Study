@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			div{width:200px;height:200px;
+				position:absolute;top:30px;left:30px;
+			}
+			.d1{
+				background:#ff0;
+				transform:rotate(45deg) translate(200px)
+			}
+			
+			.d2{background:#f0f;
+				opacity:0.5;
+				transform:skew(45deg)
+/*				transform:rotate(45deg);*/
+/*				transform-origin:right top;*/
+/*				transform:translate(100px,100px);
+scalescalescalescalescalescalescalescalescalescale*/
+				
+/*				transform:scale(2,3);*/
+/*				transform-origin:center center;*/
+/*				transform:translate(200px) rotate(45deg);*/
+			}
+/*			.d2:hover{*/
+/*				transform:rotate(45deg);*/
+/*				transform:rotate(-55deg)*/
+/*			}*/
+			#d3{
+				width:10px;
+				height:100px;
+				background:#000;
+				transform-origin:center bottom;
+/*				transform:rotate(45deg);*/
+				transition:60s;
+			}
+			#d3:hover{
+				trnsform:rotate(360deg)
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="d1">参考元素</div>
+		<div class="d2">转换元素</div>
+
+		<div id="d3"></div>
+	</body>
+</html>

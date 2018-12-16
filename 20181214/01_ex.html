@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			#parent{
+				display:flex;
+				border:2px solid red;
+/*				align-items:center;*/
+/*				align-items:flex-end;*/
+				height:600px;
+				flex-direction:row;
+				align-items:center;
+/*stretchstretchstretchstretchstretchstretch stretchstretchstretchstretchstretchstretchstretch
+stretchstretchstretchstretchstretchstretchstretchstretchstretchstretchstertchstretchstretch
+shrinkshrinkshrinkshrinkshrinkshrinkshrinkflex-shrink
+*/
+			}
+			.d1,.d2,.d3{width:200px;height:200px;
+			
+			}
+			.d1{background:red;order:2;flex-shrink:9;align-self:flex-end}
+			.d2{background:yellow;order:3;flex-shrink:6;align-self:auto}
+			.d3{background:blue;order:1;flex-shrink:2}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div class="d1"></div>
+			<div class="d2"></div>
+			<div class="d3"></div>
+		</div>
+	</body>
+</html>
+
+
+

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			*{margin:0;padding:0}
+			#banner{
+				width:1000px;
+				height:400px;
+				margin:0 auto;
+				overflow:hidden;
+				position:relative;
+			}
+			ul{
+				list-style:none;
+			}
+			ul li{
+				float:left;
+			}
+			a.ck-side{
+				width:35px;
+				height:70px;
+				border-radius:5px;
+			}
+			a.ck-left{
+				position:absolute;
+				left:10px;
+				top:165px;
+				background:rgba(0,0,0,0.1) url(img/arrow-left.png) no-repeat center center;
+			}
+			a.ck-right{
+				position:absolute;
+				right:10px;
+				top:165px;
+				background:rgba(0,0,0,0.1) url(img/arrow-right.png) no-repeat center center;
+			}
+			ul.index{
+				position:absolute;
+				bottom:10px;
+				left:465px;
+			}
+			ul.index li{
+				float:left;
+				width:10px;
+				height:10px;
+				border-radius:50%;
+				background:#fff;
+				margin-right:2px;
+			}
+			ul.index li.active{
+				background:#01aeed;
+			}
+			a.ck-side:hover{
+				background-color:rgba(0,0,0,0.2);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="banner">
+			<ul>
+				<li><img src="img/banner1.png" alt=""></li>
+				<li><img src="img/banner2.png" alt=""></li>
+				<li><img src="img/banner3.png" alt=""></li>
+				<li><img src="img/banner4.png" alt=""></li>
+			</ul>
+			<a href="#" class="ck-side ck-left"></a>
+			<a href="#" class="ck-side ck-right"></a>
+			<ul class="index">
+				<li  class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>

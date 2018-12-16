@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			*{margin:0;padding:0}
+			#container{
+				width:1000px;height:632px;
+				margin:0 auto;
+				
+			}
+			div:first-child{
+				width:609px;
+				height:377px;
+				float:left;
+				background:#e8e8e8;
+				margin:0 10px 10px 0;
+				position:relative;
+			}
+			div:nth-child(2){
+				width:381px;
+				height:377px;
+				float:left;
+				margin-bottom:10px;
+				background:#e8e8e8;
+				position:relative;
+			}
+			div:nth-child(3){
+				width:377px;
+				height:235px;
+				float:left;
+				margin-right:9px;
+				background:#e8e8e8;
+				position:relative;
+			}
+			div:nth-child(4){
+				width:198px;
+				height:235px;
+				float:left;
+				margin-right:10px;
+				background:#e8e8e8;
+				position:relative;
+			}
+			div:nth-child(5){
+				width:198px;
+				height:235px;
+				float:left;
+				margin-right:10px;
+				background:#e8e8e8;
+				position:relative;
+			}
+			div:last-child{
+				width:198px;
+				height:235px;
+				float:left;
+				background:#e8e8e8;
+				position:relative;
+			}
+			div:first-child>div.desc{
+				width:245px;
+				height:243px;
+				position:absolute;
+				left:65px;
+				top:55px;
+			}
+			div:first-child img{
+				position:absolute;
+				right:30px;
+				top:56px;
+			}
+			div:first-child>div.desc p.name{font-size:32px;}
+			div:first-child>div.desc p.detail{font-size:12px;color:#666;margin-bottom:25px;}
+			div:first-child>div.desc p.price{font-size:25px;color:#0aa1ed}
+			div:first-child a{
+				display:block;width:130px;height:40px;background:#01aeed;
+				color:#fff;font-size:1rem;text-decoration:none;text-align:center;
+				line-height:40px;margin-top:15px;border-radius:5px;
+			}
+			div:nth-child(2)>div.desc{
+				width:253px;height:221px;
+				position:absolute;
+				left:24px;
+				top:63px;
+			}
+			div:nth-child(2) img{
+				position:absolute;
+				right:25px;
+				bottom:20px;
+				height:232px;
+				width:292px;
+			}
+			div:nth-child(2)>div.desc p.name{font-size:32px;}
+			div:nth-child(2)>div.desc p.detail{font-size:12px;color:#666;margin-bottom:25px;}
+			div:nth-child(2)>div.desc p.price{font-size:25px;color:#0aa1ed}
+			div:nth-child(2) a{
+				display:block;width:130px;height:40px;background:#01aeed;
+				color:#fff;font-size:1rem;text-decoration:none;text-align:center;
+				line-height:40px;margin-top:12px;border-radius:5px;
+			}
+			div:nth-child(3)>div.desc{
+				width:149px;
+				height:143px;
+				position:absolute;
+				left:23px;
+				top:21px;
+			}
+			div:nth-child(3) img{
+				position:absolute;
+				right:17px;
+				top:40px;
+			}
+			div:nth-child(3)>div.desc p.name{font-size:22px;color:#333;margin-top:16px;}
+			div:nth-child(3)>div.desc p.price{font-size:22px;color:#0aa1ed}
+			div:nth-child(3)>a{
+				display:block;width:130px;height:40px;background:#01aeed;
+				color:#fff;font-size:1rem;text-decoration:none;text-align:center;
+				line-height:40px;margin-top:15px;border-radius:5px;
+			}
+			.name1{font-size:12px;text-align:center}
+			.price1{font-size:22px;color:#0aa1ed;font-weight:bold;text-align:center;margin-top:5px;}
+			.a{display:block;width:102px;height:28px;background:#01aeed;
+				color:#fff;font-size:14px;text-decoration:none;text-align:center;
+				line-height:28px;margin-top:15px;border-radius:5px;position:absolute;left:51px;
+				bottom:10px;}
+
+		</style>
+	</head>
+	<body>
+		<section id="container">
+			<div>
+				<div class="desc">
+					<p class="name">Apple MacBook Air系列</p>
+					<p class="detail">酷睿双核i5处理器|256GB SSD|8GB内存|英特尔HD显卡620含共享显卡内存</p>
+					<p class="price">￥6988.00</p>
+					<a href="#">查看详情</a>
+				</div>
+				<img src="img/study_computer_img1.png" alt="">
+			</div>
+			<div>
+				<div class="desc">
+					<p class="name">小米Air 金属超轻薄</p>
+					<p class="detail">酷睿双核i5处理器|512GB SSD|2GB内存|英特尔HD独立显卡</p>
+					<p class="price">￥3488.00</p>
+					<a href="#">查看详情</a>
+				</div>
+				<img src="img/study_computer_img2.png" alt="">
+			</div>
+			<div>
+				<div class="desc">
+					<p class="name">联想E480C 轻薄系列</p>
+					<p class="price">￥5399.00</p>
+					<a href="#">查看详情</a>
+				</div>
+				<img src="img/study_computer_img3.png" alt="">
+			</div>
+			<div>
+				<img src="img/study_computer_img4.png" alt="">
+					<p class="name1">联想E480C 轻薄系列</p>
+					<p class="price1">￥5399.00</p>
+					<a href="#" class="a">查看详情</a>
+				</div>
+
+			</div>
+			<div>
+					<img src="img/study_computer_img5.png" alt="">
+					<p class="name1">联想E480C 轻薄系列</p>
+					<p class="price1">￥5399.00</p>
+					<a href="#" class="a">查看详情</a>
+				</div>
+			</div>
+			<div>
+					<img src="img/study_computer_img3.png" alt="">
+					<p class="name1">联想E480C 轻薄系列</p>
+					<p class="price1">￥5399.00</p>
+					<a href="#" class="a">查看详情</a>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

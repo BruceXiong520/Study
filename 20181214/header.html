@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			*{margin:0;padding:0}
+			#header_top{
+				width:1000px;
+				height:50px;
+				margin:0 auto;
+				display:flex;
+				justify-content:flex-start;
+				margin-top:50px;
+			}
+			#header_top>img{
+				width:148px;height:41px;
+				margin-right:40px;
+			}
+			#header_top>div.input{
+				width:409px;height:36px;
+				border:1px solid #0aa1ed;outline:0;
+				text-align:center;
+			}
+			#header_top>div.input>input{
+				width:250px;height:36px;
+				line-height:36px;
+				border:0px;outline:0;
+				margin-left:10px;
+			}
+			#header_top>div.input>img{
+				float:right;
+			
+				width:36px;height:36px;
+			}
+			#header_top>div.input>b{
+				border:10px solid transparent;
+				border-top-color:#ddd;
+				float:right;
+				margin:15px 5px 0;
+			}
+			#header_top>div.input>a{
+				text-decoration:none;
+				color:#c3c3c3;font-size:14px;
+				float:right;
+				margin-top:9px;
+			}
+			#right{
+				width:218px;height:37px;
+				margin-left:180px;
+				display:flex;
+				justify-content:space-around;
+				padding-top:10px;
+			}
+			#right>img{
+				width:20px;height:20px;
+			}
+			#right>a{
+				text-decoration:none;
+				color:#808080;font-size:12px;
+			}
+			#nav{
+				width:1000px;
+				height:18px;
+				margin:40px auto;
+				display:flex;
+				padding-left:15px;
+				justify-content:flex-start;
+			}
+			#nav>a{
+				text-decoration:none;
+				font-size:16px;
+				color:#ccc;
+				margin-right:40px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="header_top">
+				<img src="img/logo.png" alt="">
+				<div class="input">
+					<input type="text" placeholder="请输入您要搜索的内容">
+					<img src="img/search.png" alt="">
+					<b></b>
+					<a href="#">分类搜索</a>
+				</div>
+				<div id="right">
+					<img src="img/care.png" alt="" class="l">
+					<img src="img/order.png" alt="" class="l">
+					<img src="img/shop_car.png" alt="" class="l">
+					<a href=""  class="l">注册</a>
+					<a href="" class="l">登录</a>
+				</div>
+			</div>
+			<nav id="nav">
+				<a href="">首页</a>
+				<a href="">学习用品</a>
+				<a href="">私人定制</a>	
+			</nav>
+		</header>
+	</body>
+</html>

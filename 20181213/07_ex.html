@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			*{margin:0;padding:0}
+			table{width:400px;height:400px;margin:0 auto;}
+			table td{border:1px solid red}
+			/*	
+			tr:first-child{background:#aaf}
+			tr:last-child{background:#faf}
+			tr:nth-child(3) td:nth-child(2){background:#ffa}
+			div:empty{
+				width:200px;height:200px;
+				background:#ffa;
+			}
+			p:only-child{width:200px;height:200px;
+				background:#faf;}
+			div:not(div:empty){
+				width:200px;height:200px;
+				background:#f0f;
+			}*/
+			table td:not(:first-child){font-size:24px;font-weight:bold}
+		</style>
+	</head>
+	<body>
+		<div><p></p></div>
+		<div></div>
+		<div>
+			<table>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
