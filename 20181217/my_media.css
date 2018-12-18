@@ -1,0 +1,23 @@
+body{
+	font:1rem "华文彩云";
+	padding:0;margin:0;
+}
+@media screen and (min-width:992px){
+	.content{
+	color:#f00;
+	background:#000;
+	}
+}
+@media screen and (max-width:991px){
+	.content{
+	color:#00f;
+	background:#faa;
+	font-size:1.5rem;
+}
+@media screen and (max-width:767px){
+	.content{
+	color:#fff;
+	background:#555;
+	font-size:0.75rem;
+}
+}

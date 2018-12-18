@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ajax</title>
+		<meta charset="utf-8">
+		<script></script>
+		<style>
+			.time{
+				width:500px;height:500px;
+				margin:0 auto;
+				border:2px solid #000;
+				border-radius:50%;
+				position:relative;
+			}
+			.minute{
+				width:9px;height:100px;
+				background:#000;
+				position:absolute;
+				left:246px;
+				top:150px;
+				transform-origin:center bottom;
+/*				animation-name:minute;
+				animation-duration:3600s;
+				animation-timing-function:linear;
+				animation-iteration-count:infinite;*/
+				animation:minute 3600s linear 0s  infinite normal;
+
+			}
+			.second{
+				width:9px;height:170px;
+				background:#f00;
+				position:absolute;
+				left:246px;
+				top:80px;
+				transform-origin:center bottom;
+/*				animation-name:second;
+				animation-duration:60s;
+				animation-timing-function:linear;
+				animation-iteration-count:infinite;*/
+				animation:minute 60s linear 0s  infinite normal;
+				animation-fill-mode:backwards;
+			}
+			@keyframes minute{
+				0%{transform:rotate(0deg)}
+				100%{transform:rotate(360deg)}
+			}
+			@keyframes second{
+				0%{transform:rotate(0deg)}
+				100%{transform:rotate(360deg)}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="time">
+			<div class="minute"></div>
+			<div class="second"></div>
+		</div>
+	</body>
+</html>

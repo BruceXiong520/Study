@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width,
+    intial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <scrijpt src="js/popper.min.js"></scrijpt>
+    <script src="bootstrap.min.js"></script>
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        ul{
+            list-style:none;
+        }
+        a{
+            color:#fff;
+            text-decoration:none;
+        }
+        div.top ul li{
+            float:left;
+        }
+        div.top{
+            background:#333;
+            padding:15px;
+        }
+        .clear:after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+        div.top ul li a{
+            color:#9d9d9d;
+            margin-right:30px;
+            font-size:14px;
+        }
+        div.top ul li a.first{
+            margin-left:70px;
+            fone-size:18px;
+
+        }
+        div.middle{
+            text-align:center;
+            background:linear-gradient(to right,#0c0535,#5a2a4d);
+            padding:50px 0;
+        }
+        div.middle h1{
+            font-size:90px;
+            color:#fff;
+            padding:50px 0 20px;
+        }
+        div.middle h2{
+            color:#9d9d9d;
+        }
+        div.middle a.btn1{
+            display:block;
+            width:300px;
+            padding:15px 0 25px;
+            background:#007bff;
+            border-radius:5px;
+            font-weight:bold;
+            margin: 20px auto 20px;
+        }
+        div.bottom img{
+            float:left;
+        }
+        /*pc*/
+        @media screen and (min-width: 992px){
+            .container{
+                margin:0 auto;
+            }
+            .top,.middle,.bottom{
+                width:100%
+            }
+            .bottom img{
+                width:25%;
+            }
+        }
+        /*pad*/
+        @media screen and (max-width:991px) and (min-width:768px){
+            .container{
+                margin:0 auto;
+            }
+            .top,.middle,.bottom{
+                width:100%;
+            }
+            .bottom img{
+                width:50%;
+            }
+        }
+        /*phone*/
+        @media screen and (man-width:767px){
+            .container{
+                margin:0 auto;
+            }
+            .top,.middle,.bottom{
+                width:100%;
+                margin:0 auto;
+            }
+            .bottom img{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top clear" >
+            <ul>
+                <li><a href="#" class="first">Bootstap中文网</a></li>
+                <li><a href="">起步</a></li>
+                <li><a href="">全局CSS样式</a></li>
+                <li><a href="">组件</a></li>
+                <li><a href="">javescript插件</a></li>
+                <li><a href="">订制</a></li>
+            </ul>
+        </div>
+        <div class="middle">
+            <h1>Bootstrap</h1>
+            <h2>简洁直观强悍的前段开发框架让web开发更加简单快速</h2>
+            <a href="#" class="btn1">Bootstrap3中文文档（v3.7.1）</a>
+            <a href="#" class="btn2">Bootstrap2中文文档（v2.0）</a>
+        </div>
+        <div class="bottom">
+            <a href=""><img src="img/boot-1.png" alt=""/></a>
+            <a href=""><img src="img/boot-2.png" alt=""/></a>
+            <a href=""><img src="img/boot-3.png" alt=""/></a>
+            <a href=""><img src="img/boot-4.png" alt=""/></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@media screen and (min-width:992px){
+    p{
+        color:red;
+    }
+}
+@media screen and (max-width:991px){
+    p{
+        color:blue;
+        font-size:2rem;
+    }
+
+}
+@media screen and (max-width:768px){
+    p{
+        color:yellow;
+        font-size:1rem;
+    }
+
+}
