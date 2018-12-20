@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+    <style>
+        .breadcrumb-item+.breadcrumb-item::before{
+            content:">";
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>进度条</h1>
+    <div class="progress">
+        <div class="progress-bar  progress-bar-striped progress-bar-animated w-25 bg-danger"></div>
+        <div class="progress-bar  progress-bar-striped progress-bar-animated w-50 bg-warning"></div>
+        <div class="progress-bar  progress-bar-striped progress-bar-animated w-100 bg-primary"></div>
+    </div>
+    <h1>条纹进度2</h1>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-100"></div>
+    </div>
+    <h1>条纹进度条</h1>
+    <div class="progress">
+        <div class="progress-bar bg-danger w-75 progress-bar-striped"></div>
+    </div>
+    <h1>普通进度条</h1>
+    <div class="progress">
+        <div class="progress-bar bg-primary w-50"></div>
+    </div>
+    <h1>面包屑导航</h1>
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="">首页</a></li>
+        <li class="breadcrumb-item"><a href="">尾页</a></li>
+    </ul>
+    <h1>分页</h1>
+    <ul class="pagination pagination-sm"><!--sm/lg控制大小的和btn-lg/sm一样-->
+        <li class="page-item disabled mr-2"><a class="page-link" href="">上一页</a></li>
+        <li class="page-item  active mx-2"><a class="page-link" href="">1</a></li>
+        <li class="page-item mx-2" ><a class="page-link" href="">2</a></li>
+        <li class="page-item mx-2"><a class="page-link" href="">下一页</a></li>
+    </ul>
+</div>
+</body>
+</html>

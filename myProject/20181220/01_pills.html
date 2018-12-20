@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+    <style>
+        img{
+            width:6rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>媒体对象demo</h1>
+    <ul class="list-unstyled">
+        <li class="media bg-light mr-2 p-2">
+            <img src="image/1.jpg" alt="" class="rounded-circle mr-2 align-self-center" />
+            <div class="media-body class="align-self-center"">
+                <h3>多媒体</h3>
+                <p>学的不仅是计算</p>
+            </div>
+        </li>
+        <li class="media bg-light mr-2 p-2">
+            <img src="image/1.jpg" alt="" class="rounded-circle mr-2 align-self-center" />
+            <div class="media-body align-self-center">
+                <h3>多媒体</h3>
+                <p>学的不仅是计算</p>
+            </div>
+        </li>
+        <li class="media bg-light mr-2 p-2">
+            <img src="image/1.jpg" class="rounded-circle mr-2 align-self-center" alt=""/>
+            <div class="media-body align-self-center">
+                <h3>多媒体</h3>
+                <p>学的不仅是计算</p>
+            </div>
+
+        </li>
+    </ul>
+    <h1>媒体对象</h1>
+    <div class="media border p-2">
+        <img src="image/1.jpg" class="rounded mr-3 align-self-center"  alt=""/>
+        <div class="media-body bg-primary">
+            <h3>李荣浩</h3>
+            <p>谁敢比我眼睛小</p>
+        </div>
+    </div>
+    <h1>手风琴</h1>
+    <div id="parent">
+        <div class="card">
+            <div class="card-header">
+                <a href="#p1" data-toggle="collapse" >卡片一</a>
+            </div>
+            <div class="collapse show" id="p1" data-parent="#parent">
+                <div class="card-body " >内容一:学习改变命运</div>
+            </div>
+            <div class="media border p-2">
+                <img src="image/1.jpg" class="rounded mr-3 align-self-center"  alt=""/>
+                <div class="media-body bg-primary">
+                    <h3>李荣浩</h3>
+                    <p>谁敢比我眼睛小</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a href="#p2" data-toggle="collapse" >卡片二</a>
+            </div>
+            <div class="collapse" id="p2" data-parent="#parent">
+                <div class="card-body" >内容二:学习改变命运</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a href="#p3" data-toggle="collapse" >卡片三</a>
+            </div>
+            <div class="collapse" id="p3" data-parent="#parent">
+                <div class="card-body" >内容三:学习改变命运</div>
+            </div>
+        </div>
+
+    </div>
+    <h1>卡片</h1>
+    <div class="card">
+        <div class="card-header">
+            <h2>woshi</h2>
+        </div>
+        <div class="card-body">
+            <p>tashi</p>
+        </div>
+        <div class="card-footer">
+            <p>shemexiewan</p>
+        </div>
+    </div>
+    <h1>折叠导航栏</h1>
+    <div class="navbar navbar-expand-md bg-dark navbar-dark ">
+        <a href="#demo" class="navbar-brand">Bootsrap中文网</a>
+        <button class=" navbar navbar-toggler" data-toggle="collapse" data-target="#demo">
+            <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="demo">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="" class="nav-link">item1</a></li>
+                <li class="nav-item"><a href="" class="nav-link">item2</a></li>
+                <li class="nav-item"><a href="" class="nav-link">item3</a></li>
+                <li class="nav-item"><a href="" class="nav-link">item4</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <h1>折叠</h1>
+    <button class="btn btn-primary" data-toggle="collapse" data-target="#demo1">折叠</button>
+    <a href="#demo2" class="btn btn-success" data-toggle="collapse">折叠2</a>
+    <div class="collapse" id="demo1">我是第一个 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab animi consequatur delectus eius eligendi enim, esse et hic incidunt iusto molestias nihil, nostrum numquam quidem quo rem repellat sapiente suscipit voluptatum. Adipisci, consequatur, consequuntur esse eveniet excepturi illum incidunt iste itaque odit tempora ut vitae voluptatem, voluptatum. Dolor earum eius error excepturi incidunt nesciunt nostrum quas sed totam velit! Autem blanditiis consectetur consequatur consequuntur, dolor enim et illo magnam molestiae, non odio, odit placeat quasi quidem temporibus tenetur ullam unde veniam vitae voluptatum. Ab ad atque cumque ea enim, fugiat laboriosam magnam maxime modi repellat sint soluta vero voluptatum.</div>
+    <div class="collapse" id="demo2"> 我是第二个</div>
+
+    <h1>导航栏</h1>
+    <div class="navbar bg-warning navbar-expand-lg">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#t1">周一</a>
+            </li>
+            <li class="nav-item">
+                <a href="#t2">周二</a>
+            </li>
+            <li class="nav-item">
+                <a href="#t3">周三</a>
+            </li>
+        </ul>
+    </div>
+    <h1>胶囊导航</h1>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#p1" class="nav-link" data-toggle="pill">DC</a>
+            <a href="#p2" class="nav-link" data-toggle="pill">漫威</a>
+        </li>
+        <div class="tab-content">
+            <div class="tab-pane" id="p1">
+                DC内容 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum eaque eum fugiat fugit harum, incidunt inventore iure laudantium maiores minus nobis odit officiis quae quisquam quo sequi veritatis vitae!
+            </div>
+            <div class="tab-pane" id="p2">
+                <div>
+                    漫威 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam, aliquid autem dicta, eos ex exercitationem, labore modi non perspiciatis quas repellendus rerum sint! Cum doloremque nisi odit officia quia?
+                </div>
+            </div>
+
+        </div>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>
